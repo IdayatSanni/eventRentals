@@ -19,6 +19,9 @@
   --accent-color: #ffd500; /* Canary Yellow - for highlights or icons */
   --highlight-color: #00d1c1; /* Turquoise Blue - for hover states or badges */
   --footer-color: #2ca58d; /* Palm Leaf Green - grounding footer or nav */
+
+  --text-color-light: #ffffff; /* Use on bold/dark backgrounds */
+  --text-color-dark: #1a1a1a; /* Use on light backgrounds like yellow */
 }
 
 *,
@@ -32,7 +35,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 100%;
   background-color: var(--background-color);
-  color: white;
+  color: var(--text-color-light);
 }
 
 h1,
