@@ -1,62 +1,61 @@
-body {
+:root {
+  --background-color: black;
+
+  /* Font Sizes */
+  --font-size-base: 18px;
+  --font-size-heading: 36px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 36px;
+
+  /* Container */
+  --container-width: 1150px;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
+  box-sizing: border-box;
 }
 
-main {
-  padding: 1em;
-}
-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-.menu-navbar {
-  display: flex;
-  background-color: rgb(171, 64, 89);
-  padding: 0em 1em;
-}
-.menu-navbar a {
-  text-decoration: none;
-  color: aliceblue;
-  padding: 1em 1em;
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font-size-base);
+  background-color: var(--background-color);
+  color: white;
 }
 
-.menu-navbar a:hover {
-  background-color: rgb(244, 122, 150);
-  padding: 1em 1em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
-.menu-navbar header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu-navbar li {
-  display: inline;
-  margin-right: 2em;
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
 }
 
-.pic1,
-.pic2,
-.pic3 {
-  display: inline-block;
-  margin: 20px 0;
+/* Medium screens (tablets): 601px - 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  :root {
+    --font-size-base: 16px;
+    --font-size-heading: 24px;
+    --container-width: 720px;
+  }
 }
 
-.pic1 img,
-.pic2 img,
-.pic3 img {
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgb(72, 71, 71);
-  transition: transform 0.3s;
-}
-
-.pic1 img:hover,
-.pic2 img:hover,
-.pic3 img:hover {
-  transform: scale(1.05);
-}
-
-ul {
-  list-style-type: circle;
+/* Small screens (mobiles): <=600px */
+@media screen and (max-width: 600px) {
+  :root {
+    --font-size-base: 14px;
+    --font-size-heading: 28px;
+    --container-width: 480px;
+  }
 }
