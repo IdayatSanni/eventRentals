@@ -12,6 +12,13 @@
 
   /* Container */
   --container-width: 1150px;
+
+  /* Design and color */
+  --background-color: #ff2d95; /* Hot Pink - vibrant, fun background */
+  --button-color: #ff6a00; /* Sunset Orange - strong call-to-action */
+  --accent-color: #ffd500; /* Canary Yellow - for highlights or icons */
+  --highlight-color: #00d1c1; /* Turquoise Blue - for hover states or badges */
+  --footer-color: #2ca58d; /* Palm Leaf Green - grounding footer or nav */
 }
 
 *,
