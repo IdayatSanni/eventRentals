@@ -62,6 +62,37 @@ h6 {
   margin: 0 auto;
 }
 
+/* navbar styling */
+.menu-navbar {
+  display: flex;
+  background-color: var(--footer-color);
+}
+.menu-navbar a {
+  color: aliceblue;
+  text-align: center;
+  padding: 1em;
+}
+
+.menu-navbar a:hover {
+  background-color: rgb(244, 122, 150);
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-navbar header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-navbar li {
+  display: inline;
+  text-align: center;
+  margin-right: 2em;
+}
+
 /* Medium screens (tablets): 601px - 900px */
 @media screen and (min-width: 601px) and (max-width: 900px) {
   :root {
