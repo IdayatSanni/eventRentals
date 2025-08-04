@@ -69,8 +69,7 @@
           </div>
         </div>
         <div class="past-events">
-          <div class="about-homepage"></div>
-          <div class="gallery-wall">
+          <div class="about-homepage">
             <h3>
               About Thoseens rentals - We are your premier online platform for
               event rentals in Milton. We offer a wide range of high-quality
@@ -98,27 +97,54 @@
                 </li>
               </ul>
             </div>
-            <div class="pic1">
-              <h3>PAST events</h3>
-              <img
-                src="images/partychair.png"
-                alt="a woman standing wearing dark green hijab, white vest and skirt and a black shoe"
-                width="500px"
-                height="500px" />
+          </div>
+          <div class="gallery-wall">
+            <div class="pic1"></div>
+            <h3>PAST events</h3>
+
+            <div class="slideshow-container">
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img
+                  src="images/partychair.png"
+                  alt="a woman standing wearing dark green hijab, white vest and skirt and a black shoe"
+                  width="500px"
+                  height="500px" />
+                <div class="text">Caption Text</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img
+                  src="images/partychair.png"
+                  alt="a woman standing wearing dark green hijab, white vest and skirt and a black shoe"
+                  width="500px"
+                  height="500px" />
+                <div class="text">Caption Two</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img
+                  src="images/partychair.png"
+                  alt="a woman standing wearing dark green hijab, white vest and skirt and a black shoe"
+                  width="500px"
+                  height="500px" />
+                <div class="text">Caption Three</div>
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <div class="pic2">
-              <img
-                src="images/partytable.png"
-                alt="a woman wearing mustard print glasses, pink shirt and black hijab"
-                width="500px"
-                height="500px" />
-            </div>
-            <div class="pic3">
-              <img
-                src="images/partycloth.png"
-                alt="a woman wearing mustard print glasses, pink shirt and black hijab"
-                width="500px"
-                height="500px" />
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
             </div>
             <button>View More</button>
           </div>

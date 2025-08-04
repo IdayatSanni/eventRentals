@@ -82,7 +82,7 @@ h6 {
 .menu-navbar a:hover {
   background-color: rgb(244, 122, 150);
 }
-ul {
+.menu-navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +131,13 @@ ul {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* past events with about */
+.past-events {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
 }
 
 /* Medium screens (tablets): 601px - 900px */
