@@ -18,7 +18,7 @@
   --button-color: #ff6a00; /* Sunset Orange - strong call-to-action */
   --accent-color: #ffd500; /* Canary Yellow - for highlights or icons */
   --highlight-color: #00d1c1; /* Turquoise Blue - for hover states or badges */
-  --footer-color: #2ca58d; /* Palm Leaf Green - grounding footer or nav */
+  --footer-color: #0e473c; /* Palm Leaf Green - grounding footer or nav */
 
   --text-color-light: #ffffff; /* Use on bold/dark backgrounds */
   --text-color-dark: #1a1a1a; /* Use on light backgrounds like yellow */
@@ -65,12 +65,18 @@ h6 {
 /* navbar styling */
 .menu-navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
   background-color: var(--footer-color);
 }
+
 .menu-navbar a {
   color: aliceblue;
   text-align: center;
   padding: 1em;
+  display: inline-block;
 }
 
 .menu-navbar a:hover {
@@ -82,15 +88,34 @@ ul {
   align-items: center;
 }
 
-.menu-navbar header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .menu-navbar li {
   display: inline;
   text-align: center;
   margin-right: 2em;
+}
+
+/* hero section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+/* image overlay part */
+.img-overlay {
+  width: 200px;
+  height: 400px;
+}
+
+.rental-categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rental-categories img {
+  width: 300px;
+  height: 300px;
 }
 
 /* Medium screens (tablets): 601px - 900px */
