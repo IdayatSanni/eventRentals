@@ -103,19 +103,34 @@ ul {
 
 /* image overlay part */
 .img-overlay {
-  width: 200px;
+  position: relative;
+  max-width: 290px;
   height: 400px;
+  margin: 0 auto;
+}
+
+.img-overlay h3 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+
+  padding: 20px; /* Some padding */
 }
 
 .rental-categories {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.9em;
 }
 
-.rental-categories img {
-  width: 300px;
-  height: 300px;
+.img-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Medium screens (tablets): 601px - 900px */
