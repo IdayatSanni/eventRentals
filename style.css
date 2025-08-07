@@ -9,6 +9,7 @@
   --font-size-lg: 1.125rem; /* 18px */
   --font-size-xl: 1.5rem; /* 24px */
   --font-size-xxl: 2.25rem; /* 36px */
+  --font-size-xxxl: 3.5rem; /* 36px */
 
   /* Container */
   --container-width: 1150px;
@@ -98,13 +99,23 @@ h6 {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
 }
-
-/* image overlay part */
+.hero-text {
+  max-width: 500px;
+  padding: 6rem 0em;
+  align-items: center;
+}
+.hero-text h1 {
+  font-size: var(--font-size-xxxl);
+}
+.hero-text p {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+}
+/* rental categories */
 .img-overlay {
   position: relative;
-  max-width: 290px;
+  overflow: hidden;
   height: 400px;
   margin: 0 auto;
 }
@@ -115,11 +126,12 @@ h6 {
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
-
+  width: 100%;
   padding: 20px; /* Some padding */
 }
 
 .rental-categories {
+  padding: 2em 0em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,10 +139,16 @@ h6 {
 }
 
 .img-overlay img {
+  transition: transform 0.5s ease;
+}
+
+.img-overlay:hover img {
+  transform: scale(1.1);
+}
+.img-overlay img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 /* past events with about and slideshow */
