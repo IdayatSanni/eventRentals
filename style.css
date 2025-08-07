@@ -154,12 +154,35 @@ h6 {
 /* past events with about and slideshow */
 .past-events {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-top: 1rem;
 }
+.about-homepage {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 600px;
+}
+
+.about-homepage-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.about-homepage-text h3 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+
+.about-homepage li {
+  margin-bottom: 1em;
+  font-size: var(--font-size-lg);
+}
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
@@ -167,6 +190,12 @@ h6 {
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  height: 400px;
+  width: 500px;
+  object-fit: cover;
 }
 
 /* Next & previous buttons */
@@ -248,6 +277,46 @@ h6 {
   to {
     opacity: 1;
   }
+}
+
+/* footer part  */
+.footer-part {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+.business-info {
+  display: flex;
+  gap: 0.5em;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-footer-text {
+  max-width: 350px;
+}
+
+.business-info ul {
+  gap: 1em;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0px;
+}
+
+.business-info li {
+  list-style-type: circle;
+}
+
+.business-info a {
+  color: #ffffff;
+}
+
+.business-info a:hover {
+  color: var(--footer-color);
 }
 
 /* Medium screens (tablets): 601px - 900px */
