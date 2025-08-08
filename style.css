@@ -172,13 +172,13 @@ h6 {
 }
 
 .about-homepage-text h3 {
-  font-size: var(--font-size-xl);
-  font-weight: 600;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
 }
 
 .about-homepage li {
   margin-bottom: 1em;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 
 .slideshow-container {
@@ -288,7 +288,7 @@ h6 {
 
 .business-info {
   display: flex;
-  gap: 0.5em;
+  gap: 1em;
   align-items: start;
   flex-direction: column;
   justify-content: center;
@@ -317,6 +317,14 @@ h6 {
 
 .business-info a:hover {
   color: var(--footer-color);
+}
+
+.address-info {
+  gap: 0.5em;
+  display: flex;
+  align-items: start;
+
+  justify-content: start;
 }
 
 /* Medium screens (tablets): 601px - 900px */
