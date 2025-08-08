@@ -327,6 +327,52 @@ h6 {
   justify-content: start;
 }
 
+/* about section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-section img {
+  border-radius: 1em;
+}
+
+.pictures-display {
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-wall img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.pic1,
+.pic2,
+.pic3 {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.pic1 img,
+.pic2 img,
+.pic3 img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(72, 71, 71);
+  transition: transform 0.3s;
+}
+
+.pic1 img:hover,
+.pic2 img:hover,
+.pic3 img:hover {
+  transform: scale(1.05);
+}
+
 /* Medium screens (tablets): 601px - 900px */
 @media screen and (min-width: 601px) and (max-width: 900px) {
   :root {
