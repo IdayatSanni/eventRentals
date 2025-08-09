@@ -15,6 +15,7 @@
   --container-width: 1150px;
 
   /* Design and color */
+  --hover-background: rgb(244, 122, 150);
   --background-color: #ff2d95; /* Hot Pink - vibrant, fun background */
   --button-color: #ff6a00; /* Sunset Orange - strong call-to-action */
   --accent-color: #ffd500; /* Canary Yellow - for highlights or icons */
@@ -81,7 +82,7 @@ h6 {
 }
 
 .menu-navbar a:hover {
-  background-color: rgb(244, 122, 150);
+  background-color: var(--hover-background);
 }
 .menu-navbar ul {
   display: flex;
@@ -156,7 +157,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding: 2rem 0em;
 }
 .about-homepage {
   display: flex;
@@ -316,7 +317,7 @@ h6 {
 }
 
 .business-info a:hover {
-  color: var(--footer-color);
+  color: var(--hover-background);
 }
 
 .address-info {
@@ -371,6 +372,64 @@ h6 {
 .pic2 img:hover,
 .pic3 img:hover {
   transform: scale(1.05);
+}
+
+/* contact form */
+#form {
+  display: flex;
+  gap: 1em;
+
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+#form input {
+  width: 600px;
+  height: 40px;
+}
+
+#form textarea {
+  width: 600px;
+  height: 80px;
+}
+
+.contact-area {
+  display: flex;
+  gap: 2em;
+  padding: 4em;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+}
+.contact-area h2 {
+  font-size: var(--font-size-xxl);
+  margin-bottom: 1em;
+}
+
+.contact-area p {
+  font-size: var(--font-size-md);
+  margin-bottom: 1em;
+}
+
+.contact-area button {
+  padding: 0.5em 2em;
+  border-radius: 18px;
+  border: 0px;
+  color: var(--text-color-light);
+  background-color: var(--footer-color);
+  font-size: var(--font-size-lg);
+}
+
+.contact-area button:hover {
+  color: var(--text-color-light);
+  background-color: var(--hover-background);
+  font-size: var(--font-size-lg);
+}
+
+footer {
+  background-color: var(--footer-color);
+  padding: 4em 0em;
 }
 
 /* Medium screens (tablets): 601px - 900px */
