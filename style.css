@@ -16,7 +16,7 @@
 
   /* Design and color */
   --hover-background: rgb(244, 122, 150);
-  --background-color: #ff2d95; /* Hot Pink - vibrant, fun background */
+  --background-color: #f1f1f1; /* Hot Pink - vibrant, fun background */
   --button-color: #ff6a00; /* Sunset Orange - strong call-to-action */
   --accent-color: #ffd500; /* Canary Yellow - for highlights or icons */
   --highlight-color: #00d1c1; /* Turquoise Blue - for hover states or badges */
@@ -56,7 +56,12 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--button-color);
   font-weight: 700;
+}
+
+p {
+  color: var(--button-color);
 }
 
 .container {
@@ -178,6 +183,7 @@ h6 {
 }
 
 .about-homepage li {
+  color: var(--footer-color);
   margin-bottom: 1em;
   font-size: var(--font-size-md);
 }
@@ -430,6 +436,12 @@ h6 {
 footer {
   background-color: var(--footer-color);
   padding: 4em 0em;
+}
+
+footer p,
+li,
+h3 {
+  color: var(--text-color-light);
 }
 
 /* Medium screens (tablets): 601px - 900px */
